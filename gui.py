@@ -3,8 +3,6 @@ import tkinter as tk
 from operations import Operations
 from keys import Keys
 
-# TODO: split into Tkinter GUI and backend classes
-
 
 class CalculatorApp(tk.Frame, Operations, Keys):
     def __init__(self, master=None):
@@ -66,23 +64,19 @@ class CalculatorApp(tk.Frame, Operations, Keys):
                    butt_3, butt_pl], [butt_0, butt_dec, butt_eq]]
 
         # button grid layout and styling
-        count = 1
+        r = 0
         for row in buttons:
+            r += 1
             for i, j in enumerate(row):
-                j.grid(row=count, column=i, sticky=butt_expand)
+                if j == butt_0:
+                    j.grid(row=5, columnspan=2, sticky=butt_expand)
+                elif r == 5 and j != butt_0:
+                    j.grid(row=5, column=i+1, sticky=butt_expand)
+                else:
+                    j.grid(row=r, column=i, sticky=butt_expand)
+                    
                 j.configure(font=(self.font_fam, 18, "bold"), highlightthickness=0,
                             borderwidth=0)
-            count += 1
-
-        # TODO: implement 5th row grid configuration above
-        butt_0.grid(row=5, columnspan=2, sticky=butt_expand)
-        butt_0.configure(font=(self.font_fam, 18, "bold"), highlightthickness=0,
-                         borderwidth=0)
-        grids5 = [butt_dec, butt_eq]
-        for i, j in enumerate(grids5):
-            j.grid(row=5, column=i + 2, sticky=butt_expand)
-            j.configure(font=(self.font_fam, 18, "bold"), highlightthickness=0,
-                        borderwidth=0)
 
     # resets display size
     def reset_disp(self):
