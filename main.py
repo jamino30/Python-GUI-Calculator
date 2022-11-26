@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     # misc. window attributes
     root.wm_title("Calculator")
-    photo = tk.PhotoImage(file='~/Pictures/icon.png')
+    photo = tk.PhotoImage(file="logo.png")
     root.wm_iconphoto(False, photo)
 
     CalculatorApp(root)
