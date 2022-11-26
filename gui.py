@@ -64,9 +64,8 @@ class CalculatorApp(tk.Frame, Operations, Keys):
                    butt_3, butt_pl], [butt_0, butt_dec, butt_eq]]
 
         # button grid layout and styling
-        r = 0
         for row in buttons:
-            r += 1
+            r = buttons.index(row) + 1
             for i, j in enumerate(row):
                 if j == butt_0:
                     j.grid(row=5, columnspan=2, sticky=butt_expand)
@@ -74,7 +73,7 @@ class CalculatorApp(tk.Frame, Operations, Keys):
                     j.grid(row=5, column=i+1, sticky=butt_expand)
                 else:
                     j.grid(row=r, column=i, sticky=butt_expand)
-                    
+
                 j.configure(font=(self.font_fam, 18, "bold"), highlightthickness=0,
                             borderwidth=0)
 
