@@ -1,10 +1,10 @@
 class Nums:
-    # handle number button operations
     def __init__(self):
         self.display = None
         self.current = None
         self.comp = None
 
+    # handle number button operations
     def num_click(self, num):
         # displays numbers
         if self.current == 0:

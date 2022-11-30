@@ -2,12 +2,15 @@ from eval import Eval
 
 
 class Syms(Eval):
-    # handle operation button operations
     def __init__(self):
         super().__init__()
         self.current = None
 
+    # handle operation button operations
     def sym_click(self, sym):
+        # reset display size after operation is selected
+        self.reset_disp()
+
         # deals with "all clear"
         if sym == "AC":
             self.reset_disp()
@@ -16,18 +19,7 @@ class Syms(Eval):
 
         # deals with evaluating computation
         if sym == "=":
-            result = self.eval_comp()
-
-            # handles computation int, float results
-            if type(result) != str:
-                li_result = str(result).split(".")
-                if float(li_result[-1]) == 0:
-                    result = li_result[0]
-
-                self.round_result(result)
-            else:
-                self.current = result
-
+            self.float_result()
             self.new_current()
 
         # deals with negation
@@ -56,9 +48,12 @@ class Syms(Eval):
         self.comp.append(")" + u2)
         self.current = self.eval_comp()
 
-    # rounds result (based on length)
-    def round_result(self, r):
-        if len(str(r).split(".")[-1]) > 5:
-            self.current = round(r, 5)
-        else:
-            self.current = r
+    def float_result(self):
+        result = self.eval_comp()
+
+        # handles computation int, float results
+        li_result = str(result).split(".")
+        if float(li_result[-1]) == 0:
+            result = li_result[0]
+
+        self.current = result

@@ -7,7 +7,7 @@ class Operations(Nums, Syms):
         # stores current value and computations
         super().__init__()
         self.current = 0
-        self.comp = []
+        self.comp = ["0"]
         self.ops = ["+", "-", "*", "/", "–", "%"]
 
     # resets computation to new computed value

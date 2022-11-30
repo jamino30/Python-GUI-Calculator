@@ -79,7 +79,8 @@ class CalculatorApp(tk.Frame, Operations, Keys):
 
     # resets display size
     def reset_disp(self):
-        self.display["font"] = (self.font_fam, 45)
+        self.disp_size = 45
+        self.display["font"] = (self.font_fam, self.disp_size)
 
     # decreases display size
     def dec_disp(self):
