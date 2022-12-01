@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from operations import Operations
+from src.operations import Operations
 
 
 class Keys:
