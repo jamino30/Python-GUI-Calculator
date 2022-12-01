@@ -25,7 +25,3 @@ class Nums:
 
         # update display
         self.display["text"] = self.current
-
-        # console testing
-        print("Current Val:", self.current)
-        print("Computation:", self.comp, "\n")
