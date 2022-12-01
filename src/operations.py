@@ -24,10 +24,6 @@ class Nums:
 class Eval:
     # evaluates computation
     def eval_comp(self):
-        # uses eval() safely (prevents hidden values/dangerous functions)
-        # 1. user is restricted to number/operation keys only
-        # 2. all possible exceptions have been accounted for
-        # Source: https://lybniz2.sourceforge.net/safeeval.html
         try:
             round_int = 5
             result = round(eval("".join(self.comp), {"__builtins__": None}, {}), round_int)
