@@ -13,9 +13,9 @@ The app provides standard calculator functionality:
     ```
     git clone https://github.com/jamino30/Python-GUI-Calculator.git
     ```
-### Method 1: Docker
+### Method #1: Docker
 
-### Method 2: PyInstaller
+### Method #2: PyInstaller
 - Install PyInstaller from PyPi:
     ```
     pip install -U pyinstaller
