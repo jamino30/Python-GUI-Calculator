@@ -7,8 +7,8 @@ Basic calculator app with custom GUI display:
 Note: Utilizes eval() safely and prevents user
 from issuing dangerous commands/functions.
 
-MIT License
-Copyright (c) 2022 Jai Amin
+MIT License.
+Copyright (c) 2022 Jai Amin.
 """
 
 from gui import CalculatorApp, tk

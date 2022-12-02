@@ -1,5 +1,5 @@
 class Nums:
-    # handle number button operations
+    # handle number button operation
     def num_click(self, num):
         # displays numbers
         if self.current == 0:
