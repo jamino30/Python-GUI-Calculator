@@ -8,6 +8,23 @@ The app provides standard calculator functionality:
 - Binary operations (+, -, *, /)
 - Keyboard inputs
 
+## Getting Started
+- Get the code:
+    ```
+    git clone https://github.com/jamino30/Python-GUI-Calculator.git
+    ```
+### Method #1: Docker
+
+### Method #2: PyInstaller
+- Install PyInstaller from PyPi:
+    ```
+    pip3 install pyinstaller
+    ```
+- Navigate to source directory in Python-GUI-Calculator and build app with the following:
+    ```
+    pyinstaller main.py --onefile --noconsole
+    ```
+
 ## Screenshot
 ![Calculator Screenshot](CalculatorScreenshot.png)
 
