@@ -18,11 +18,11 @@ The app provides standard calculator functionality:
 ### Method #2: PyInstaller
 - Install PyInstaller from PyPi:
     ```
-    pip install -U pyinstaller
+    pip3 install pyinstaller
     ```
 - Navigate to source directory in Python-GUI-Calculator and build app with the following:
     ```
-    pyinstaller main.py
+    pyinstaller main.py --onefile --noconsole
     ```
 
 ## Screenshot
