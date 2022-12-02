@@ -26,8 +26,7 @@ if __name__ == "__main__":
 
     # misc. window attributes
     root.wm_title("Calculator")
-    icon = tk.PhotoImage(file='~/Pictures/logo.png')
-    root.wm_iconphoto(False, icon)
+    root.configure(bg="#2e2e2e")
 
     CalculatorApp(root)
     root.mainloop()

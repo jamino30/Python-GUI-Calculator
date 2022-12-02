@@ -48,7 +48,7 @@ class CalculatorApp(tk.Frame, Operations, Keys):
         self.disp_size = 45
         self.font_fam = "Courier New"
         self.display = tk.Label(master, text=self.current, height=1, padx=10,
-                                font=(self.font_fam, self.disp_size))
+                                font=(self.font_fam, self.disp_size), bg="#2e2e2e")
         self.display.grid(row=0, columnspan=4, sticky="se")
 
         # button styling
