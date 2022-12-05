@@ -1,5 +1,5 @@
 """
-Basic calculator app with custom GUI display:
+A Basic calculator app with custom GUI display:
 - Unary Operations (+/-, %)
 - Binary Operations (+, -, *, /)
 - Keyboard inputs
