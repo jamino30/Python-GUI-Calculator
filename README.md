@@ -28,11 +28,10 @@ The app provides standard calculator functionality:
 ## Screenshot
 ![Calculator Screenshot](CalculatorScreenshot.png)
 
-__Note:__ This application utilizes eval() safely and prevents user
-from issuing dangerous commands/functions. 
-
-For more information, refer to
-[https://lybniz2.sourceforge.net/safeeval.html](https://lybniz2.sourceforge.net/safeeval.html)
+__Note:__ Although eval() is not recommended for security purposes,
+this application utilizes eval() safely and prevents user
+from issuing dangerous commands/functions. For more information, refer to
+[https://lybniz2.sourceforge.net/safeeval.html](https://lybniz2.sourceforge.net/safeeval.html).
 
 ## License
 Copyright (c) Jai Amin. All rights reserved.
