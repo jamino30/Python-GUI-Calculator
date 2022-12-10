@@ -25,7 +25,7 @@ The app provides standard calculator functionality:
     pyinstaller main.py --onefile --noconsole
     ```
 
-## Screenshot
+## Screenshot (macOS)
 ![Calculator Screenshot](CalculatorScreenshot.png)
 
 __Note:__ Although eval() is not recommended for security purposes,
